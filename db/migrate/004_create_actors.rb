@@ -4,7 +4,7 @@ class CreateActors < ActiveRecord::Migration[4.2]
       t.string :first_name
       t.string :last_name
       t.integer :character_id
-      t
+      t.integer :show_id
     end
   end
 end
