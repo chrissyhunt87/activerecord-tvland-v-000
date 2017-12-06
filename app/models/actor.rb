@@ -4,7 +4,10 @@ class Actor < ActiveRecord::Base
 
     def list_roles
       roles = []
-      
+      self.characters.each do |c|
+        roles << "#{self.name}" - "#{self.show}"
+      end
+      roles
     end
 
     def full_name
